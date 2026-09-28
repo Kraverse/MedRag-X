@@ -1,0 +1,133 @@
+{
+  "questions": [
+    {
+      "id": "sleep_attention_effect",
+      "document": "Sleep-Quality-and-Cognition.md",
+      "question": "What happened to attention lapses when simulated sleep duration was below six hours?",
+      "expected_chunk_hint": "24 percent higher rate of attention lapses",
+      "expected_section": "Results"
+    },
+    {
+      "id": "sleep_working_memory",
+      "document": "Sleep-Quality-and-Cognition.md",
+      "question": "How much did working memory span scores change in the short sleep group?",
+      "expected_chunk_hint": "reduced by approximately 9 percent",
+      "expected_section": "Results"
+    },
+    {
+      "id": "sleep_irregular_timing",
+      "document": "Sleep-Quality-and-Cognition.md",
+      "question": "What was associated with slower decision-making even when total sleep duration was adequate?",
+      "expected_chunk_hint": "more than 90 minutes of variation in sleep midpoint",
+      "expected_section": "Results"
+    },
+    {
+      "id": "sleep_napping_effect",
+      "document": "Sleep-Quality-and-Cognition.md",
+      "question": "Did napping help shift workers in the synthetic study?",
+      "expected_chunk_hint": "Napping for 20 to 30 minutes partially improved attention",
+      "expected_section": "Results"
+    },
+    {
+      "id": "sleep_cohort_sizes",
+      "document": "Sleep-Quality-and-Cognition.md",
+      "question": "How many simulated participants were in each cohort?",
+      "expected_chunk_hint": "1,200 simulated participants",
+      "expected_section": "Methods"
+    },
+    {
+      "id": "sleep_limitations",
+      "document": "Sleep-Quality-and-Cognition.md",
+      "question": "What limitations does the sleep document acknowledge?",
+      "expected_chunk_hint": "All results are simulated",
+      "expected_section": "Limitations"
+    },
+    {
+      "id": "wearable_rest_accuracy",
+      "document": "Wearable-Heart-Rate-Accuracy.md",
+      "question": "How accurate were the simulated wrist devices at rest?",
+      "expected_chunk_hint": "below 2 percent",
+      "expected_section": "Results"
+    },
+    {
+      "id": "wearable_interval_error",
+      "document": "Wearable-Heart-Rate-Accuracy.md",
+      "question": "Which device showed the largest error during high-intensity intervals?",
+      "expected_chunk_hint": "Device C",
+      "expected_section": "Results"
+    },
+    {
+      "id": "wearable_ppg_factors",
+      "document": "Wearable-Heart-Rate-Accuracy.md",
+      "question": "What factors can degrade optical heart-rate signal quality?",
+      "expected_chunk_hint": "Motion artifacts",
+      "expected_section": "Background"
+    },
+    {
+      "id": "wearable_skin_tone",
+      "document": "Wearable-Heart-Rate-Accuracy.md",
+      "question": "How did darker skin tones affect modeled error in the simulation?",
+      "expected_chunk_hint": "3 percentage points",
+      "expected_section": "Results"
+    },
+    {
+      "id": "evidence_rct_definition",
+      "document": "Reading-Medical-Research-Primer.md",
+      "question": "What defines a randomized controlled trial?",
+      "expected_chunk_hint": "assign participants to intervention or control arms by chance",
+      "expected_section": "Study Designs"
+    },
+    {
+      "id": "evidence_meta_analysis",
+      "document": "Reading-Medical-Research-Primer.md",
+      "question": "What does a meta-analysis do?",
+      "expected_chunk_hint": "pool their quantitative results statistically",
+      "expected_section": "Study Designs"
+    },
+    {
+      "id": "evidence_publication_bias",
+      "document": "Reading-Medical-Research-Primer.md",
+      "question": "What is publication bias and which plot detects it?",
+      "expected_chunk_hint": "Funnel plots",
+      "expected_section": "Common Sources of Bias"
+    },
+    {
+      "id": "evidence_nnt",
+      "document": "Reading-Medical-Research-Primer.md",
+      "question": "What is the number needed to treat?",
+      "expected_chunk_hint": "reciprocal of absolute risk reduction",
+      "expected_section": "Interpreting Effect Sizes"
+    },
+    {
+      "id": "evidence_bradford_hill",
+      "document": "Reading-Medical-Research-Primer.md",
+      "question": "What viewpoints are used to judge whether an association is causal?",
+      "expected_chunk_hint": "Bradford Hill",
+      "expected_section": "Confounding and Causality"
+    },
+    {
+      "id": "evidence_confounder",
+      "document": "Reading-Medical-Research-Primer.md",
+      "question": "What is a confounder?",
+      "expected_chunk_hint": "associated with both the exposure and the outcome",
+      "expected_section": "Confounding and Causality"
+    }
+  ],
+  "out_of_scope": [
+    {
+      "id": "oos_diabetes_treatment",
+      "document": "Sleep-Quality-and-Cognition.md",
+      "question": "What is the first-line drug treatment for type 2 diabetes?"
+    },
+    {
+      "id": "oos_dosage",
+      "document": "Wearable-Heart-Rate-Accuracy.md",
+      "question": "What is the maximum safe dose of paracetamol for adults?"
+    },
+    {
+      "id": "oos_unrelated_history",
+      "document": "Reading-Medical-Research-Primer.md",
+      "question": "Who won the battle of Waterloo?"
+    }
+  ]
+}
