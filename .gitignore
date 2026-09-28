@@ -1,0 +1,42 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# --- Environment & secrets (never commit) ---
+.env
+.env.local
+.env*.local
+backend/.env
+frontend/.env.local
+*.pem
+*.key
+
+# --- Node / Next.js ---
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/next-env.d.ts
+*.tsbuildinfo
+npm-debug.log*
+
+# --- Data artifacts ---
+data/indexes/
+*.faiss
+*.npy
+
+# --- Local run logs ---
+*.log
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Model caches (keep local, never in git) ---
+.cache/
+fastembed_cache/

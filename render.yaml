@@ -1,0 +1,25 @@
+# Render deployment descriptor for the MedRAG-X FastAPI backend.
+# Free instance: spins down after 15 min idle; ~50s cold start on next request.
+services:
+  - type: web
+    name: medrag-x-api
+    runtime: python
+    plan: free
+    region: oregon
+    branch: main
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.4"
+      - key: LLM_API_KEY
+        sync: false # set in Render dashboard (SECRET)
+      - key: LLM_MODEL
+        value: openai/gpt-oss-120b
+      - key: ALLOWED_ORIGINS
+        value: https://medrag-x.pages.dev # update if your Pages subdomain differs
+      - key: LOG_LEVEL
+        value: INFO
