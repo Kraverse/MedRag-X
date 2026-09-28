@@ -1,0 +1,148 @@
+{
+  "n_questions": 16,
+  "recall_at_k": {
+    "@1": 0.812,
+    "@2": 0.938,
+    "@4": 1.0
+  },
+  "hit_at_1": 0.812,
+  "precision_at_4": 0.354,
+  "retrieval_latency_ms_avg": 12.6,
+  "retrieval_latency_ms_p95": 15.4,
+  "out_of_scope": {
+    "n": 3,
+    "honest_refusal_rate": 1.0,
+    "detail": [
+      {
+        "id": "oos_diabetes_treatment",
+        "refused": true
+      },
+      {
+        "id": "oos_dosage",
+        "refused": true
+      },
+      {
+        "id": "oos_unrelated_history",
+        "refused": true
+      }
+    ]
+  },
+  "per_question": [
+    {
+      "id": "sleep_attention_effect",
+      "top1_section": "Discussion",
+      "expected_section": "Results",
+      "hint_found_at": 0,
+      "top1_score": 0.9272
+    },
+    {
+      "id": "sleep_working_memory",
+      "top1_section": "Discussion",
+      "expected_section": "Results",
+      "hint_found_at": 0,
+      "top1_score": 0.9313
+    },
+    {
+      "id": "sleep_irregular_timing",
+      "top1_section": "Discussion",
+      "expected_section": "Results",
+      "hint_found_at": 0,
+      "top1_score": 0.964
+    },
+    {
+      "id": "sleep_napping_effect",
+      "top1_section": "Results",
+      "expected_section": "Results",
+      "hint_found_at": 1,
+      "top1_score": 0.7882
+    },
+    {
+      "id": "sleep_cohort_sizes",
+      "top1_section": "Results",
+      "expected_section": "Methods",
+      "hint_found_at": 0,
+      "top1_score": 0.7754
+    },
+    {
+      "id": "sleep_limitations",
+      "top1_section": "Discussion",
+      "expected_section": "Limitations",
+      "hint_found_at": 2,
+      "top1_score": 0.7713
+    },
+    {
+      "id": "wearable_rest_accuracy",
+      "top1_section": "Results",
+      "expected_section": "Results",
+      "hint_found_at": 0,
+      "top1_score": 0.9092
+    },
+    {
+      "id": "wearable_interval_error",
+      "top1_section": "Limitations",
+      "expected_section": "Results",
+      "hint_found_at": 0,
+      "top1_score": 0.8475
+    },
+    {
+      "id": "wearable_ppg_factors",
+      "top1_section": "Results",
+      "expected_section": "Background",
+      "hint_found_at": 0,
+      "top1_score": 0.8041
+    },
+    {
+      "id": "wearable_skin_tone",
+      "top1_section": "Conclusion",
+      "expected_section": "Results",
+      "hint_found_at": 1,
+      "top1_score": 0.8556
+    },
+    {
+      "id": "evidence_rct_definition",
+      "top1_section": "Hierarchy of Evidence",
+      "expected_section": "Study Designs",
+      "hint_found_at": 0,
+      "top1_score": 0.8541
+    },
+    {
+      "id": "evidence_meta_analysis",
+      "top1_section": "Hierarchy of Evidence",
+      "expected_section": "Study Designs",
+      "hint_found_at": 0,
+      "top1_score": 0.7468
+    },
+    {
+      "id": "evidence_publication_bias",
+      "top1_section": "Interpreting Effect Sizes",
+      "expected_section": "Common Sources of Bias",
+      "hint_found_at": 0,
+      "top1_score": 0.8472
+    },
+    {
+      "id": "evidence_nnt",
+      "top1_section": "Conclusion",
+      "expected_section": "Interpreting Effect Sizes",
+      "hint_found_at": 0,
+      "top1_score": 0.6124
+    },
+    {
+      "id": "evidence_bradford_hill",
+      "top1_section": "Conclusion",
+      "expected_section": "Confounding and Causality",
+      "hint_found_at": 0,
+      "top1_score": 0.804
+    },
+    {
+      "id": "evidence_confounder",
+      "top1_section": "Conclusion",
+      "expected_section": "Confounding and Causality",
+      "hint_found_at": 0,
+      "top1_score": 0.7251
+    }
+  ],
+  "groundedness_mock_extractive": {
+    "n_answers": 18,
+    "grounded_fraction": 1.0
+  }
+}
