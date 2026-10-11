@@ -199,6 +199,20 @@ export default function DemoWorkspace() {
                 <p className="mt-1 text-xs leading-relaxed text-slate-500">{d.description}</p>
               </button>
             ))}
+            <div className="md:col-span-3 rounded-xl border border-dashed border-teal-300 bg-teal-50/60 p-5 text-center">
+              <p className="font-semibold text-slate-900">Have your own document?</p>
+              <p className="mt-1 text-sm text-slate-600">
+                Upload a PDF, TXT, or Markdown file and ask questions about its contents.
+              </p>
+              <button
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                className="btn-primary mt-3 text-sm"
+              >
+                Upload a document
+              </button>
+              <p className="mt-2 text-xs text-slate-500">Maximum file size: 10 MB · Temporary session storage</p>
+            </div>
           </div>
         )}
 
@@ -224,24 +238,25 @@ export default function DemoWorkspace() {
         {stage === "ready" && (
           <div className="mt-3">
             <button
+              type="button"
               onClick={() => fileInputRef.current?.click()}
               className="text-xs font-medium text-teal-700 underline hover:text-teal-800"
             >
               Upload a different document (PDF / TXT / Markdown, max 10 MB)
             </button>
-            <input
-              ref={fileInputRef}
-              type="file"
-              accept=".pdf,.txt,.md"
-              className="hidden"
-              onChange={(e) => {
-                const f = e.target.files?.[0];
-                if (f) void handleUpload(f);
-                e.target.value = "";
-              }}
-            />
           </div>
         )}
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept=".pdf,.txt,.md"
+          className="hidden"
+          onChange={(e) => {
+            const f = e.target.files?.[0];
+            if (f) void handleUpload(f);
+            e.target.value = "";
+          }}
+        />
 
         {error && (
           <div className="mt-4 rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700">
